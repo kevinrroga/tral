@@ -528,6 +528,71 @@ img { max-width: 100%; display: block; }
   color: rgba(26, 26, 26, 0.6);
 }
 
+/* ============ COMMUNITY ============ */
+.community { background: var(--color-charcoal); }
+
+.community__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.community-card {
+  background: var(--color-navy);
+  border: 1px solid rgba(26, 26, 26, 0.08);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.community-card:hover {
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+}
+
+.community-card__icon {
+  color: var(--color-gold);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.community-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.community-card p {
+  font-size: 0.92rem;
+  color: rgba(26, 26, 26, 0.65);
+  line-height: 1.6;
+}
+
+/* ============ FREE CONSULT BADGE ============ */
+.free-consult-badge {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--color-gold);
+  background: rgba(191, 26, 47, 0.05);
+  border-radius: 0 4px 4px 0;
+}
+
+.free-consult-badge__label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.free-consult-badge__text {
+  font-size: 0.92rem;
+  color: rgba(26, 26, 26, 0.7);
+  line-height: 1.55;
+}
+
 /* ============ FAQ ============ */
 .faq { background: var(--color-navy); }
 
@@ -801,5 +866,6 @@ img { max-width: 100%; display: block; }
   .mobile-drawer { display: flex; }
   .services__grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
+  .community__grid { grid-template-columns: 1fr; }
   .hero__ctas { flex-direction: column; align-items: stretch; }
 }

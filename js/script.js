@@ -249,7 +249,7 @@
     geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
     var material = new THREE.PointsMaterial({
-      color: new THREE.Color(0xc9a84c),
+      color: new THREE.Color(0xbf1a2f),
       size: 0.55,
       transparent: true,
       opacity: 0.45,

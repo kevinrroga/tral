@@ -1,4 +1,4 @@
-# [BUSINESS NAME] — Relocation Consulting Website
+# Ferial Rroga — Relocation Consulting Website
 
 A bilingual (Turkish / English) luxury one-page consulting website for a Tirana-based
 relocation consultant helping Turkish citizens move to Albania.
@@ -35,6 +35,7 @@ All translatable text lives in `data-tr` / `data-en` attributes on each element.
 `js/script.js` swaps `innerHTML` based on the active language, persists the
 choice to `localStorage`, and defaults to Turkish.
 
-## Replacing the placeholder
+## Contact details
 
-Search the project for `[BUSINESS NAME]` and replace it with the real business name.
+Update the WhatsApp number via the `data-whatsapp-number` attribute on `<body>`
+in `index.html`, and the email address in the contact section's `mailto:` link.

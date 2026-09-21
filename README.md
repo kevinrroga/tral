@@ -1,4 +1,4 @@
-# Ferial Rroga — Relocation Consulting Website
+# Ferial Rroga: Relocation Consulting Website
 
 A bilingual (Turkish / English) luxury one-page consulting website for a Tirana-based
 relocation consultant helping Turkish citizens move to Albania.
@@ -6,13 +6,13 @@ relocation consultant helping Turkish citizens move to Albania.
 ## Stack
 
 - Semantic HTML5, CSS3 (custom properties)
-- [Three.js](https://threejs.org/) (CDN) — hero particle field background
-- [GSAP](https://gsap.com/) + ScrollTrigger (CDN) — all animations
+- [Three.js](https://threejs.org/) (CDN), hero particle field background
+- [GSAP](https://gsap.com/) + ScrollTrigger (CDN), all animations
 - Vanilla JavaScript, no build step
 
 ## Running locally
 
-No build tools required — serve the folder with any static file server, e.g.:
+No build tools required. Serve the folder with any static file server, e.g.:
 
 ```bash
 python -m http.server 4173
@@ -43,7 +43,7 @@ values there to change them everywhere on the site.
 
 ## Contact form
 
-The form has no backend or database — it works entirely client-side by
+The form has no backend or database. It works entirely client-side by
 handing the submission to the visitor's own apps:
 
 - Opens their mail client via a `mailto:` link, addressed to
@@ -51,23 +51,23 @@ handing the submission to the visitor's own apps:
 - Opens WhatsApp (web or app) via a `wa.me` link to `data-whatsapp-number`,
   with the same fields pre-filled as the message text.
 
-The visitor still has to hit send in each app — nothing is transmitted
+The visitor still has to hit send in each app, since nothing is transmitted
 automatically by the site itself. Message copy for both is bilingual and
 picked up from `contactFormCopy` in `js/script.js`.
 
 ## SEO
 
 - **Title/description** target actual search terms (oturma izni, vize,
-  işletme kaydı), not just the brand name — see `<title>` and
+  işletme kaydı), not just the brand name; see `<title>` and
   `meta[name=description]` in `index.html`.
 - **Open Graph / Twitter Card** tags drive the preview shown when the link
   is shared in WhatsApp, Facebook, LinkedIn, etc. `og:image` currently
-  points at `assets/og-image.jpg`, which doesn't exist yet — add a real
-  1200×630 image (a photo works better than a generated graphic) at that
+  points at `assets/og-image.jpg`, which doesn't exist yet. Add a real
+  1200x630 image (a photo works better than a generated graphic) at that
   path, or update the meta tags to point elsewhere.
 - **Structured data** (JSON-LD in `<head>`) marks the business up as a
   `ProfessionalService` with a service catalog, and the FAQ section as a
-  `FAQPage` — both are eligibility signals for Google rich results, and
+  `FAQPage`. Both are eligibility signals for Google rich results, and
   don't depend on having social media profiles.
 - **FAQ section** (`#faq`) uses question-phrased headings that mirror real
   search queries ("Arnavutluk'ta nasıl oturma izni alınır?"), which is the
@@ -79,7 +79,7 @@ picked up from `contactFormCopy` in `js/script.js`.
 
 Several files reference `https://ferialrroga.example/` as a stand-in for
 the real domain (chosen because `.example` is reserved for documentation
-and never resolves) — `index.html` (canonical, `og:url`, JSON-LD `url`),
+and never resolves): `index.html` (canonical, `og:url`, JSON-LD `url`),
 `robots.txt`, and `sitemap.xml`. Once the site has a real domain, replace
 every occurrence of `ferialrroga.example` across those files.
 
@@ -87,15 +87,15 @@ every occurrence of `ferialrroga.example` across those files.
 
 Meta tags and structured data make the page legible to Google; they don't
 make it rank on their own. For a local service business, the highest-impact
-things — all outside this codebase — are, roughly in order of leverage:
+things, all outside this codebase, are roughly in order of leverage:
 
-1. **Google Business Profile** — far more important than Facebook/LinkedIn
+1. **Google Business Profile**, far more important than Facebook/LinkedIn
    for showing up in Google's map pack and local results for Albania-based
    searches.
 2. **Reviews** on that profile.
 3. **Backlinks** from other sites (Turkish expat forums, local directories,
    partner businesses).
-4. **Ongoing content** — the FAQ section here is a start; a blog post
+4. **Ongoing content**: the FAQ section here is a start; a blog post
    answering one specific question in depth outranks a one-line answer.
 
 None of these are things I can set up on your behalf (they require your

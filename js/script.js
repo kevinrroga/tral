@@ -107,7 +107,7 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ============================================================
-     CONTACT FORM — forwards the submission to WhatsApp + email
+     CONTACT FORM: forwards the submission to WhatsApp + email
      (no backend/server; the visitor's own WhatsApp and mail app
      send the message, pre-filled with the form's contents)
   ============================================================ */
@@ -191,7 +191,7 @@
   }
 
   /* ============================================================
-     THREE.JS — HERO PARTICLE FIELD
+     THREE.JS: HERO PARTICLE FIELD
   ============================================================ */
   function initHeroParticles() {
     var canvas = document.getElementById('hero-canvas');

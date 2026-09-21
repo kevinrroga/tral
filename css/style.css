@@ -283,6 +283,10 @@ img { max-width: 100%; display: block; }
   opacity: 0.09;
 }
 
+.hero__mountains {
+  opacity: 0.55;
+}
+
 .hero__skyline--front {
   z-index: -3;
   opacity: 0.18;

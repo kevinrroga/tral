@@ -280,16 +280,16 @@ img { max-width: 100%; display: block; }
 
 .hero__skyline--back {
   z-index: -4;
-  opacity: 0.09;
+  opacity: 0.13;
 }
 
 .hero__mountains {
-  opacity: 0.55;
+  opacity: 0.65;
 }
 
 .hero__skyline--front {
   z-index: -3;
-  opacity: 0.18;
+  opacity: 0.26;
 }
 
 .hero__light {

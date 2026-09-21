@@ -3,13 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-tr="Ferial Rroga | Arnavutluk'ta Yeni Bir Başlangıç" data-en="Ferial Rroga | A New Beginning in Albania">Ferial Rroga | Arnavutluk'ta Yeni Bir Başlangıç</title>
-<meta name="description" data-tr="Türk vatandaşları için Arnavutluk'ta vize, oturma izni ve yerleşim danışmanlığı." data-en="Visa, residence permit, and relocation consulting for Turkish citizens moving to Albania." content="Türk vatandaşları için Arnavutluk'ta vize, oturma izni ve yerleşim danışmanlığı.">
+
+<!-- Primary SEO: title & description carry the actual search terms people
+     type (oturma izni, vize, işletme kaydı), not just the brand name. -->
+<title data-tr="Arnavutluk Oturma İzni ve Vize Danışmanlığı | Ferial Rroga" data-en="Albania Residence Permit &amp; Visa Consulting | Ferial Rroga">Arnavutluk Oturma İzni ve Vize Danışmanlığı | Ferial Rroga</title>
+<meta name="description" content="Arnavutluk'a taşınmak isteyen Türk vatandaşları için oturma izni, vize başvurusu, işletme kaydı ve yerleşim danışmanlığı. Türkçe destek, güvenilir rehberlik. Ücretsiz görüşme için hemen iletişime geçin.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ferial Rroga">
+<meta name="theme-color" content="#0a0f1e">
+
+<!-- Replace with the real domain once the site is live at one. -->
+<link rel="canonical" href="https://ferialrroga.example/">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn link previews) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ferial Rroga">
+<meta property="og:url" content="https://ferialrroga.example/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Arnavutluk Oturma İzni ve Vize Danışmanlığı | Ferial Rroga">
+<meta property="og:description" content="Arnavutluk'a taşınmak isteyen Türk vatandaşları için oturma izni, vize başvurusu, işletme kaydı ve yerleşim danışmanlığı. Türkçe destek, güvenilir rehberlik.">
+<meta property="og:image" content="https://ferialrroga.example/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter/X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Arnavutluk Oturma İzni ve Vize Danışmanlığı | Ferial Rroga">
+<meta name="twitter:description" content="Arnavutluk'a taşınmak isteyen Türk vatandaşları için oturma izni, vize başvurusu, işletme kaydı ve yerleşim danışmanlığı.">
+<meta name="twitter:image" content="https://ferialrroga.example/assets/og-image.jpg">
+
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<!-- Structured data: tells Google this is a local professional service in
+     Tirana serving Turkish clients, and who runs it. Helps eligibility for
+     rich results and the local/map pack, independent of social profiles. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ferial Rroga",
+  "description": "Arnavutluk'a taşınmak isteyen Türk vatandaşları için oturma izni, vize ve işletme kuruluşu danışmanlığı.",
+  "url": "https://ferialrroga.example/",
+  "telephone": "+355673615880",
+  "email": "ferialrroga@hotmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tiranë",
+    "addressCountry": "AL"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "Albania" },
+    { "@type": "Country", "name": "Turkey" }
+  ],
+  "availableLanguage": ["tr", "en"],
+  "founder": {
+    "@type": "Person",
+    "name": "Ferial Rroga"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Hizmetler",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oturma İzni" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vize Danışmanlığı" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "İşletme Kaydı" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Belge Tercümesi" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gayrimenkul Danışmanlığı" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diploma Denkliği" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Muhasebe Hizmetleri" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Noter, Avukatlık ve Sağlık Yönlendirmeleri" } }
+    ]
+  }
+}
+</script>
+
+<!-- FAQPage structured data mirrors the on-page FAQ section, matched to
+     the exact phrasing people search for. Eligible for FAQ rich results. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Arnavutluk için vize gerekli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Türk vatandaşları için giriş koşulları zaman zaman değişebilir. Durumunuzu birlikte değerlendirir, güncel vize gereksinimlerinde ve doğru başvuru sürecinde size rehberlik ederiz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Arnavutluk'ta nasıl oturma izni alınır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oturma izni başvurusu; gerekli belgelerin hazırlanmasını, başvurunun yapılmasını ve yetkili makamlarla takip sürecini kapsar. Sürecin her adımında yanınızdayız."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Arnavutluk'ta şirket nasıl kurulur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Şirket kuruluşu; şirket türünün belirlenmesi, gerekli evrakların hazırlanması ve resmi tescil sürecinden oluşur. Türkçe destekle süreci sizin için kolaylaştırıyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Türkiye'den alınan diploma Arnavutluk'ta geçerli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Türkiye'de alınan diploma ve öğrenim belgelerinin Arnavutluk'ta tanınması için bir denklik süreci gerekir. Gerekli belgelerin hazırlanmasında ve başvurunuzda size destek oluyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Arnavutluk'taki işletmem için muhasebe desteği alabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Kayıtlı işletmeniz için düzenli muhasebe ve mali işlerinizi takip eden güvenilir bir ekiple çalışıyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Noter, avukatlık veya sağlık konularında yardım alabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ev veya araç alım satımı gibi noter işlemlerinizde, avukatlık ve sağlık ihtiyaçlarınızda güvenilir iş ortaklarımız aracılığıyla sizi doğru yere yönlendiriyoruz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Süreç ne kadar sürer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Süre, başvuru türüne ve kişisel durumunuza göre değişir. İlk görüşmede size özel gerçekçi bir zaman çizelgesi paylaşırız."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Neden Arnavutluk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Arnavutluk; Avrupa'ya yakınlığı, uygun yaşam maliyeti ve gelişen iş ortamıyla Türk vatandaşları için giderek daha cazip bir seçenek haline geliyor."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body data-whatsapp-number="355673615880" data-contact-email="ferialrroga@hotmail.com">
 
@@ -25,6 +171,7 @@
       <a href="#about" class="nav-link" data-tr="Hakkımızda" data-en="About">Hakkımızda</a>
       <a href="#services" class="nav-link" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
       <a href="#how-it-works" class="nav-link" data-tr="Nasıl Çalışır" data-en="How It Works">Nasıl Çalışır</a>
+      <a href="#faq" class="nav-link" data-tr="SSS" data-en="FAQ">SSS</a>
       <a href="#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a>
     </nav>
 
@@ -45,6 +192,7 @@
     <a href="#about" class="nav-link" data-tr="Hakkımızda" data-en="About">Hakkımızda</a>
     <a href="#services" class="nav-link" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
     <a href="#how-it-works" class="nav-link" data-tr="Nasıl Çalışır" data-en="How It Works">Nasıl Çalışır</a>
+    <a href="#faq" class="nav-link" data-tr="SSS" data-en="FAQ">SSS</a>
     <a href="#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a>
   </div>
 </header>
@@ -82,6 +230,10 @@
     <span class="ticker__item" data-tr="Belge Tercümesi" data-en="Document Translation">Belge Tercümesi</span>
     <span class="ticker__sep">◆</span>
     <span class="ticker__item" data-tr="Gayrimenkul" data-en="Real Estate">Gayrimenkul</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item" data-tr="Diploma Denkliği" data-en="Diploma Equivalency">Diploma Denkliği</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item" data-tr="Muhasebe" data-en="Accounting">Muhasebe</span>
     <span class="ticker__sep">◆</span>
     <span class="ticker__item" data-tr="Danışmanlık" data-en="Consulting">Danışmanlık</span>
     <span class="ticker__sep">◆</span>
@@ -181,6 +333,30 @@
         <h3 data-tr="Danışmanlık" data-en="Consulting">Danışmanlık</h3>
         <p data-tr="Bankacılık, sağlık sigortası ve günlük yaşam konularında kapsamlı danışmanlık veriyoruz." data-en="Comprehensive consulting on banking, health insurance, and daily life essentials.">Bankacılık, sağlık sigortası ve günlük yaşam konularında kapsamlı danışmanlık veriyoruz.</p>
       </article>
+
+      <article class="card service-card">
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3L2 8l10 5 10-5-10-5z" stroke="#c9a84c" stroke-width="1.2"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5" stroke="#c9a84c" stroke-width="1.2"/><path d="M22 8v6" stroke="#c9a84c" stroke-width="1.2"/></svg>
+        </div>
+        <h3 data-tr="Diploma Denkliği" data-en="Diploma Equivalency">Diploma Denkliği</h3>
+        <p data-tr="Türkiye'den alınan diploma ve öğrenim belgelerinin Arnavutluk'ta tanınması için denklik sürecinde size destek oluyoruz." data-en="We support you through the equivalency process for recognizing Turkish diplomas and academic credentials in Albania.">Türkiye'den alınan diploma ve öğrenim belgelerinin Arnavutluk'ta tanınması için denklik sürecinde size destek oluyoruz.</p>
+      </article>
+
+      <article class="card service-card">
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="3" width="16" height="18" rx="1" stroke="#c9a84c" stroke-width="1.2"/><path d="M8 8h8M8 12h3M8 16h3M14 12h2M14 16h2" stroke="#c9a84c" stroke-width="1.2"/></svg>
+        </div>
+        <h3 data-tr="Muhasebe Hizmetleri" data-en="Accounting Services">Muhasebe Hizmetleri</h3>
+        <p data-tr="Kayıtlı işletmeniz için düzenli muhasebe ve mali işlerinizi güvenilir ekibimizle takip ediyoruz." data-en="Ongoing accounting and financial management for your registered business, handled by our trusted team.">Kayıtlı işletmeniz için düzenli muhasebe ve mali işlerinizi güvenilir ekibimizle takip ediyoruz.</p>
+      </article>
+
+      <article class="card service-card">
+        <div class="service-card__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v3M5 9l7-4 7 4M4 9h16M6 9v9M18 9v9M3 21h18" stroke="#c9a84c" stroke-width="1.2"/><path d="M9 21v-5h6v5" stroke="#c9a84c" stroke-width="1.2"/></svg>
+        </div>
+        <h3 data-tr="Noter, Avukatlık ve Sağlık Yönlendirmeleri" data-en="Notary, Legal &amp; Health Referrals">Noter, Avukatlık ve Sağlık Yönlendirmeleri</h3>
+        <p data-tr="Ev/araç alım-satımı gibi noter işlemlerinizde, avukatlık ve sağlık ihtiyaçlarınızda güvenilir iş ortaklarımıza yönlendiriyoruz." data-en="We connect you with trusted partners for notary transactions such as buying property or a vehicle, and for legal or healthcare needs.">Ev/araç alım-satımı gibi noter işlemlerinizde, avukatlık ve sağlık ihtiyaçlarınızda güvenilir iş ortaklarımıza yönlendiriyoruz.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -215,6 +391,59 @@
         <h3 data-tr="Yerleşim ve Destek" data-en="Settlement & Support">Yerleşim ve Destek</h3>
         <p data-tr="Arnavutluk'a yerleştikten sonra da yanınızda olmaya devam ediyoruz." data-en="We remain by your side long after you've settled in Albania.">Arnavutluk'a yerleştikten sonra da yanınızda olmaya devam ediyoruz.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="eyebrow" data-tr="Sıkça Sorulan Sorular" data-en="Frequently Asked Questions">Sıkça Sorulan Sorular</span>
+      <h2 data-tr="Aklınızdaki Sorular" data-en="Your Questions, Answered">Aklınızdaki Sorular</h2>
+      <p class="section-sub" data-tr="Arnavutluk'a taşınma süreciyle ilgili en çok sorulan sorular" data-en="The questions we hear most about moving to Albania">Arnavutluk'a taşınma süreciyle ilgili en çok sorulan sorular</p>
+    </div>
+
+    <div class="faq__list reveal">
+      <details class="faq-item">
+        <summary data-tr="Arnavutluk için vize gerekli mi?" data-en="Do Turkish citizens need a visa for Albania?">Arnavutluk için vize gerekli mi?</summary>
+        <p data-tr="Türk vatandaşları için giriş koşulları zaman zaman değişebilir. Durumunuzu birlikte değerlendirir, güncel vize gereksinimlerinde ve doğru başvuru sürecinde size rehberlik ederiz." data-en="Entry requirements for Turkish citizens can change over time. We review your specific situation together and guide you through the current, correct visa application process.">Türk vatandaşları için giriş koşulları zaman zaman değişebilir. Durumunuzu birlikte değerlendirir, güncel vize gereksinimlerinde ve doğru başvuru sürecinde size rehberlik ederiz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Arnavutluk'ta nasıl oturma izni alınır?" data-en="How do you get a residence permit in Albania?">Arnavutluk'ta nasıl oturma izni alınır?</summary>
+        <p data-tr="Oturma izni başvurusu; gerekli belgelerin hazırlanmasını, başvurunun yapılmasını ve yetkili makamlarla takip sürecini kapsar. Sürecin her adımında yanınızdayız." data-en="Applying for a residence permit involves preparing the required documents, submitting the application, and following up with the relevant authorities. We're with you at every step.">Oturma izni başvurusu; gerekli belgelerin hazırlanmasını, başvurunun yapılmasını ve yetkili makamlarla takip sürecini kapsar. Sürecin her adımında yanınızdayız.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Arnavutluk'ta şirket nasıl kurulur?" data-en="How do you set up a company in Albania?">Arnavutluk'ta şirket nasıl kurulur?</summary>
+        <p data-tr="Şirket kuruluşu; şirket türünün belirlenmesi, gerekli evrakların hazırlanması ve resmi tescil sürecinden oluşur. Türkçe destekle süreci sizin için kolaylaştırıyoruz." data-en="Setting up a company involves choosing the right company type, preparing the necessary paperwork, and completing official registration. We simplify the process for you with Turkish-speaking support.">Şirket kuruluşu; şirket türünün belirlenmesi, gerekli evrakların hazırlanması ve resmi tescil sürecinden oluşur. Türkçe destekle süreci sizin için kolaylaştırıyoruz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Türkiye'den alınan diploma Arnavutluk'ta geçerli mi?" data-en="Is a Turkish diploma recognized in Albania?">Türkiye'den alınan diploma Arnavutluk'ta geçerli mi?</summary>
+        <p data-tr="Türkiye'de alınan diploma ve öğrenim belgelerinin Arnavutluk'ta tanınması için bir denklik süreci gerekir. Gerekli belgelerin hazırlanmasında ve başvurunuzda size destek oluyoruz." data-en="A Turkish diploma or academic credential needs to go through an equivalency process to be recognized in Albania. We support you in preparing the required documents and submitting the application.">Türkiye'de alınan diploma ve öğrenim belgelerinin Arnavutluk'ta tanınması için bir denklik süreci gerekir. Gerekli belgelerin hazırlanmasında ve başvurunuzda size destek oluyoruz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Arnavutluk'taki işletmem için muhasebe desteği alabilir miyim?" data-en="Can I get accounting support for my business in Albania?">Arnavutluk'taki işletmem için muhasebe desteği alabilir miyim?</summary>
+        <p data-tr="Evet. Kayıtlı işletmeniz için düzenli muhasebe ve mali işlerinizi takip eden güvenilir bir ekiple çalışıyoruz." data-en="Yes. We work with a trusted team that manages ongoing accounting and financial matters for your registered business.">Evet. Kayıtlı işletmeniz için düzenli muhasebe ve mali işlerinizi takip eden güvenilir bir ekiple çalışıyoruz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Noter, avukatlık veya sağlık konularında yardım alabilir miyim?" data-en="Can you help with notary, legal, or health matters?">Noter, avukatlık veya sağlık konularında yardım alabilir miyim?</summary>
+        <p data-tr="Ev veya araç alım satımı gibi noter işlemlerinizde, avukatlık ve sağlık ihtiyaçlarınızda güvenilir iş ortaklarımız aracılığıyla sizi doğru yere yönlendiriyoruz." data-en="For notary transactions such as buying property or a vehicle, and for legal or healthcare needs, we connect you with trusted partners we work with.">Ev veya araç alım satımı gibi noter işlemlerinizde, avukatlık ve sağlık ihtiyaçlarınızda güvenilir iş ortaklarımız aracılığıyla sizi doğru yere yönlendiriyoruz.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Süreç ne kadar sürer?" data-en="How long does the process take?">Süreç ne kadar sürer?</summary>
+        <p data-tr="Süre, başvuru türüne ve kişisel durumunuza göre değişir. İlk görüşmede size özel gerçekçi bir zaman çizelgesi paylaşırız." data-en="Timelines vary depending on the type of application and your personal situation. We share a realistic, personalized timeline during the first consultation.">Süre, başvuru türüne ve kişisel durumunuza göre değişir. İlk görüşmede size özel gerçekçi bir zaman çizelgesi paylaşırız.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary data-tr="Neden Arnavutluk?" data-en="Why Albania?">Neden Arnavutluk?</summary>
+        <p data-tr="Arnavutluk; Avrupa'ya yakınlığı, uygun yaşam maliyeti ve gelişen iş ortamıyla Türk vatandaşları için giderek daha cazip bir seçenek haline geliyor." data-en="With its proximity to Europe, affordable cost of living, and growing business environment, Albania is becoming an increasingly attractive option for Turkish citizens.">Arnavutluk; Avrupa'ya yakınlığı, uygun yaşam maliyeti ve gelişen iş ortamıyla Türk vatandaşları için giderek daha cazip bir seçenek haline geliyor.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -279,6 +508,7 @@
       <a href="#about" class="nav-link" data-tr="Hakkımızda" data-en="About">Hakkımızda</a>
       <a href="#services" class="nav-link" data-tr="Hizmetler" data-en="Services">Hizmetler</a>
       <a href="#how-it-works" class="nav-link" data-tr="Nasıl Çalışır" data-en="How It Works">Nasıl Çalışır</a>
+      <a href="#faq" class="nav-link" data-tr="SSS" data-en="FAQ">SSS</a>
       <a href="#contact" class="nav-link" data-tr="İletişim" data-en="Contact">İletişim</a>
     </nav>
 

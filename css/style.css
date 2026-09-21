@@ -493,6 +493,63 @@ img { max-width: 100%; display: block; }
   color: rgba(245, 240, 235, 0.65);
 }
 
+/* ============ FAQ ============ */
+.faq { background: var(--color-navy); }
+
+.faq__list {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: var(--color-charcoal);
+  border: 1px solid rgba(245, 240, 235, 0.08);
+  border-radius: 4px;
+  padding: 0.4rem 1.5rem;
+  transition: border-color var(--transition);
+}
+.faq-item:hover { border-color: rgba(201, 168, 76, 0.4); }
+.faq-item[open] { border-color: var(--color-gold); }
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1.1rem 2rem 1.1rem 0;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-off-white);
+  position: relative;
+  transition: color var(--transition);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--color-gold); }
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--color-gold);
+  transition: transform var(--transition);
+}
+.faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(245, 240, 235, 0.7);
+  padding-bottom: 1.4rem;
+  padding-right: 2rem;
+}
+
 /* ============ CONTACT ============ */
 .contact { background: var(--color-navy); }
 

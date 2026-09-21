@@ -239,32 +239,87 @@
   <canvas id="hero-canvas" class="hero__canvas"></canvas>
   <div class="hero__gradient-fallback"></div>
 
-  <svg class="hero__skyline" viewBox="0 0 1440 260" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
-    <rect x="0" y="170" width="60" height="90"/>
-    <rect x="60" y="120" width="45" height="140"/>
-    <rect x="110" y="150" width="75" height="110"/>
-    <path d="M110 150a37.5 37.5 0 0 1 75 0z"/>
-    <rect x="178" y="70" width="14" height="80"/>
-    <path d="M178 70l7-18 7 18z"/>
-    <rect x="210" y="160" width="55" height="100"/>
-    <rect x="270" y="100" width="40" height="160"/>
-    <rect x="315" y="130" width="90" height="130"/>
-    <rect x="350" y="50" width="22" height="80"/>
-    <path d="M350 50l11-22 11 22z"/>
-    <circle cx="361" cy="75" r="7"/>
-    <rect x="410" y="165" width="60" height="95"/>
-    <rect x="475" y="110" width="100" height="150"/>
-    <rect x="500" y="90" width="50" height="20"/>
-    <rect x="580" y="145" width="70" height="115"/>
-    <rect x="655" y="90" width="130" height="170"/>
-    <line x1="720" y1="90" x2="720" y2="58" stroke="currentColor" stroke-width="3"/>
-    <rect x="790" y="160" width="60" height="100"/>
-    <rect x="855" y="125" width="90" height="135"/>
-    <rect x="950" y="170" width="50" height="90"/>
-    <rect x="1005" y="100" width="110" height="160"/>
-    <rect x="1120" y="155" width="70" height="105"/>
-    <rect x="1195" y="115" width="90" height="145"/>
-    <rect x="1290" y="160" width="150" height="100"/>
+  <svg class="hero__skyline hero__skyline--back" viewBox="0 0 1440 260" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+    <rect x="10" y="205" width="70" height="55"/>
+    <rect x="95" y="190" width="55" height="70"/>
+    <rect x="165" y="212" width="60" height="48"/>
+    <path d="M250 260L295 188 340 260Z"/>
+    <path d="M267 260L295 208 323 260Z" opacity="0.6"/>
+    <rect x="365" y="198" width="65" height="62"/>
+    <rect x="445" y="180" width="50" height="80"/>
+    <rect x="515" y="215" width="80" height="45"/>
+    <rect x="615" y="195" width="55" height="65"/>
+    <rect x="690" y="175" width="45" height="85"/>
+    <rect x="760" y="210" width="70" height="50"/>
+    <rect x="855" y="192" width="60" height="68"/>
+    <rect x="935" y="205" width="50" height="55"/>
+    <rect x="1005" y="182" width="60" height="78"/>
+    <rect x="1085" y="208" width="75" height="52"/>
+    <rect x="1180" y="195" width="55" height="65"/>
+    <rect x="1255" y="215" width="180" height="45"/>
+  </svg>
+
+  <svg class="hero__skyline hero__skyline--front" viewBox="0 0 1440 260" preserveAspectRatio="none" aria-hidden="true">
+    <g fill="currentColor">
+      <rect x="0" y="170" width="60" height="90"/>
+      <rect x="60" y="120" width="45" height="140"/>
+      <rect x="110" y="150" width="75" height="110"/>
+      <path d="M110 150a37.5 37.5 0 0 1 75 0z"/>
+      <rect x="178" y="70" width="14" height="80"/>
+      <path d="M178 70l7-18 7 18z"/>
+      <rect x="210" y="160" width="55" height="100"/>
+      <rect x="270" y="100" width="40" height="160"/>
+      <rect x="315" y="130" width="90" height="130"/>
+      <rect x="350" y="50" width="22" height="80"/>
+      <path d="M350 50l11-22 11 22z"/>
+      <circle cx="361" cy="75" r="7"/>
+      <rect x="410" y="165" width="60" height="95"/>
+      <!-- twisted tower, echoing Tirana's TID Tower -->
+      <g>
+        <rect x="480" y="230" width="70" height="30" transform="rotate(0 515 245)"/>
+        <rect x="480" y="200" width="70" height="30" transform="rotate(4 515 215)"/>
+        <rect x="480" y="170" width="70" height="30" transform="rotate(8 515 185)"/>
+        <rect x="480" y="140" width="70" height="30" transform="rotate(12 515 155)"/>
+        <rect x="480" y="110" width="70" height="30" transform="rotate(16 515 125)"/>
+        <rect x="480" y="88" width="70" height="22" transform="rotate(20 515 99)"/>
+      </g>
+      <rect x="580" y="145" width="70" height="115"/>
+      <rect x="655" y="90" width="130" height="170"/>
+      <line x1="720" y1="90" x2="720" y2="58" stroke="currentColor" stroke-width="3"/>
+      <rect x="790" y="160" width="60" height="100"/>
+      <rect x="855" y="125" width="90" height="135"/>
+      <rect x="950" y="170" width="50" height="90"/>
+      <rect x="1005" y="100" width="110" height="160"/>
+      <rect x="1120" y="155" width="70" height="105"/>
+      <rect x="1195" y="115" width="90" height="145"/>
+      <rect x="1290" y="160" width="150" height="100"/>
+    </g>
+    <g class="hero__lights" fill="#f5e6b8">
+      <circle class="hero__light" cx="75" cy="140" r="2.2"/>
+      <circle class="hero__light" cx="88" cy="160" r="2.2"/>
+      <circle class="hero__light" cx="230" cy="180" r="2.2"/>
+      <circle class="hero__light" cx="245" cy="200" r="2.2"/>
+      <circle class="hero__light" cx="285" cy="125" r="2.2"/>
+      <circle class="hero__light" cx="285" cy="150" r="2.2"/>
+      <circle class="hero__light" cx="430" cy="190" r="2.2"/>
+      <circle class="hero__light" cx="445" cy="210" r="2.2"/>
+      <circle class="hero__light" cx="500" cy="120" r="2.2"/>
+      <circle class="hero__light" cx="530" cy="180" r="2.2"/>
+      <circle class="hero__light" cx="600" cy="175" r="2.2"/>
+      <circle class="hero__light" cx="615" cy="200" r="2.2"/>
+      <circle class="hero__light" cx="680" cy="120" r="2.2"/>
+      <circle class="hero__light" cx="700" cy="150" r="2.2"/>
+      <circle class="hero__light" cx="715" cy="190" r="2.2"/>
+      <circle class="hero__light" cx="745" cy="220" r="2.2"/>
+      <circle class="hero__light" cx="880" cy="150" r="2.2"/>
+      <circle class="hero__light" cx="900" cy="180" r="2.2"/>
+      <circle class="hero__light" cx="1030" cy="130" r="2.2"/>
+      <circle class="hero__light" cx="1050" cy="165" r="2.2"/>
+      <circle class="hero__light" cx="1065" cy="200" r="2.2"/>
+      <circle class="hero__light" cx="1220" cy="145" r="2.2"/>
+      <circle class="hero__light" cx="1240" cy="180" r="2.2"/>
+      <circle class="hero__light" cx="1320" cy="190" r="2.2"/>
+    </g>
   </svg>
 
   <div class="hero__content">

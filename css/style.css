@@ -262,7 +262,7 @@ img { max-width: 100%; display: block; }
 .hero__gradient-fallback {
   position: absolute;
   inset: 0;
-  z-index: -4;
+  z-index: -5;
   background: radial-gradient(circle at 50% 30%, #141c33 0%, var(--color-navy) 65%);
 }
 
@@ -273,10 +273,23 @@ img { max-width: 100%; display: block; }
   bottom: 0;
   width: 100%;
   height: clamp(120px, 22vw, 220px);
-  z-index: -3;
   color: var(--color-gold);
-  opacity: 0.16;
   pointer-events: none;
+  will-change: transform;
+}
+
+.hero__skyline--back {
+  z-index: -4;
+  opacity: 0.09;
+}
+
+.hero__skyline--front {
+  z-index: -3;
+  opacity: 0.18;
+}
+
+.hero__light {
+  opacity: 0.35;
 }
 
 .hero::after {

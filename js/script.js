@@ -367,6 +367,30 @@
       .to('.hero__ctas', { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.2')
       .to('.hero__scroll-indicator', { opacity: 1, duration: 0.6 }, '-=0.2');
 
+    /* ---- Skyline: scroll parallax between the two depth layers ---- */
+    gsap.to('.hero__skyline--front', {
+      yPercent: -22,
+      ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1 }
+    });
+    gsap.to('.hero__skyline--back', {
+      yPercent: -10,
+      ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1 }
+    });
+
+    /* ---- Skyline: twinkling window lights ---- */
+    gsap.utils.toArray('.hero__light').forEach(function (light) {
+      gsap.to(light, {
+        opacity: gsap.utils.random(0.15, 0.85),
+        duration: gsap.utils.random(1.5, 3.5),
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+        delay: gsap.utils.random(0, 3)
+      });
+    });
+
     /* ---- WhatsApp float button entrance ---- */
     gsap.set('.whatsapp-float', { opacity: 0, scale: 0.6, y: 20 });
     gsap.to('.whatsapp-float', {

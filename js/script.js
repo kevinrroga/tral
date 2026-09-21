@@ -10,6 +10,28 @@
   var langToggleBtn = document.getElementById('langToggle');
   var langOptions = document.querySelectorAll('.lang-toggle__option');
 
+  /* ---- WhatsApp deep links ---- */
+  var whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
+  var whatsappNumber = (document.body.getAttribute('data-whatsapp-number') || '').replace(/\D/g, '');
+  var whatsappMessages = {
+    tr: 'Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.',
+    en: 'Hello, I would like more information about relocating to Albania.'
+  };
+
+  function updateWhatsappLinks(lang) {
+    if (!whatsappNumber || !whatsappLinks.length) return;
+    var text = encodeURIComponent(whatsappMessages[lang] || whatsappMessages.tr);
+    var url = 'https://wa.me/' + whatsappNumber + '?text=' + text;
+    whatsappLinks.forEach(function (link) {
+      link.setAttribute('href', url);
+    });
+    var floatBtn = document.getElementById('whatsappFloat');
+    if (floatBtn) {
+      var ariaVal = floatBtn.getAttribute('data-' + lang + '-aria');
+      if (ariaVal) floatBtn.setAttribute('aria-label', ariaVal);
+    }
+  }
+
   function applyLanguage(lang) {
     translatable.forEach(function (el) {
       var val = el.getAttribute('data-' + lang);
@@ -22,6 +44,7 @@
     langOptions.forEach(function (opt) {
       opt.classList.toggle('is-active', opt.getAttribute('data-lang') === lang);
     });
+    updateWhatsappLinks(lang);
     document.documentElement.setAttribute('lang', lang);
     try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
   }
@@ -271,6 +294,17 @@
       )
       .to('.hero__ctas', { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.2')
       .to('.hero__scroll-indicator', { opacity: 1, duration: 0.6 }, '-=0.2');
+
+    /* ---- WhatsApp float button entrance ---- */
+    gsap.set('.whatsapp-float', { opacity: 0, scale: 0.6, y: 20 });
+    gsap.to('.whatsapp-float', {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      duration: 0.6,
+      delay: 1.4,
+      ease: 'back.out(1.7)'
+    });
 
     /* ---- Generic reveal: fade up + slight scale on scroll ---- */
     gsap.utils.toArray('.reveal').forEach(function (el) {

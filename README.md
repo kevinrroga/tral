@@ -37,5 +37,20 @@ choice to `localStorage`, and defaults to Turkish.
 
 ## Contact details
 
-Update the WhatsApp number via the `data-whatsapp-number` attribute on `<body>`
-in `index.html`, and the email address in the contact section's `mailto:` link.
+Both the WhatsApp number and the contact email are set once, on `<body>` in
+`index.html`, via `data-whatsapp-number` and `data-contact-email`. Update the
+values there to change them everywhere on the site.
+
+## Contact form
+
+The form has no backend or database — it works entirely client-side by
+handing the submission to the visitor's own apps:
+
+- Opens their mail client via a `mailto:` link, addressed to
+  `data-contact-email`, with the form's fields pre-filled as the subject/body.
+- Opens WhatsApp (web or app) via a `wa.me` link to `data-whatsapp-number`,
+  with the same fields pre-filled as the message text.
+
+The visitor still has to hit send in each app — nothing is transmitted
+automatically by the site itself. Message copy for both is bilingual and
+picked up from `contactFormCopy` in `js/script.js`.

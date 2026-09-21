@@ -107,13 +107,84 @@
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   /* ============================================================
-     CONTACT FORM (front-end only, no backend wired up)
+     CONTACT FORM — forwards the submission to WhatsApp + email
+     (no backend/server; the visitor's own WhatsApp and mail app
+     send the message, pre-filled with the form's contents)
   ============================================================ */
   var contactForm = document.getElementById('contactForm');
   var formNote = document.getElementById('formNote');
+  var contactEmail = document.body.getAttribute('data-contact-email') || '';
+
+  var contactFormCopy = {
+    tr: {
+      intro: 'Web sitesi iletişim formundan yeni bir talep:',
+      name: 'Ad Soyad',
+      email: 'E-posta',
+      phone: 'Telefon',
+      message: 'Mesaj',
+      subject: 'Web sitesinden yeni iletişim formu'
+    },
+    en: {
+      intro: 'New inquiry from the website contact form:',
+      name: 'Full Name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Message',
+      subject: 'New contact form submission'
+    }
+  };
+
+  function buildContactSummary(data, lang) {
+    var copy = contactFormCopy[lang] || contactFormCopy.tr;
+    var lines = [copy.intro, '', copy.name + ': ' + data.name, copy.email + ': ' + data.email];
+    if (data.phone) lines.push(copy.phone + ': ' + data.phone);
+    lines.push('', copy.message + ':', data.message);
+    return lines.join('\n');
+  }
+
+  function openInNewTab(url) {
+    var link = document.createElement('a');
+    link.href = url;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  function openMailClient(url) {
+    var link = document.createElement('a');
+    link.href = url;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      var data = {
+        name: (document.getElementById('name') || {}).value || '',
+        email: (document.getElementById('email') || {}).value || '',
+        phone: (document.getElementById('phone') || {}).value || '',
+        message: (document.getElementById('message') || {}).value || ''
+      };
+      var copy = contactFormCopy[currentLang] || contactFormCopy.tr;
+      var summary = buildContactSummary(data, currentLang);
+
+      if (contactEmail) {
+        var mailUrl =
+          'mailto:' + contactEmail +
+          '?subject=' + encodeURIComponent(copy.subject) +
+          '&body=' + encodeURIComponent(summary);
+        openMailClient(mailUrl);
+      }
+
+      if (whatsappNumber) {
+        openInNewTab('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(summary));
+      }
+
       if (formNote) formNote.hidden = false;
       contactForm.reset();
     });

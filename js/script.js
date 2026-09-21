@@ -5,8 +5,6 @@
      LANGUAGE TOGGLE
   ============================================================ */
   var LANG_KEY = 'siteLang';
-  var translatable = document.querySelectorAll('[data-tr]');
-  var placeholderEls = document.querySelectorAll('[data-tr-placeholder]');
   var langToggleBtn = document.getElementById('langToggle');
   var langOptions = document.querySelectorAll('.lang-toggle__option');
 
@@ -33,11 +31,14 @@
   }
 
   function applyLanguage(lang) {
-    translatable.forEach(function (el) {
+    /* Queried fresh on every call, not cached at load, because content
+       like the ticker duplicates its nodes after init (for the seamless
+       marquee loop); a cached NodeList would miss those new nodes. */
+    document.querySelectorAll('[data-tr]').forEach(function (el) {
       var val = el.getAttribute('data-' + lang);
       if (val !== null) el.innerHTML = val;
     });
-    placeholderEls.forEach(function (el) {
+    document.querySelectorAll('[data-tr-placeholder]').forEach(function (el) {
       var val = el.getAttribute('data-' + lang + '-placeholder');
       if (val !== null) el.setAttribute('placeholder', val);
     });

@@ -461,6 +461,7 @@
     /* ---- Stats count-up ---- */
     var statNumbers = document.querySelectorAll('.stat__number');
     statNumbers.forEach(function (el) {
+      if (!el.hasAttribute('data-count')) return;
       var target = parseFloat(el.getAttribute('data-count'), 10);
       var suffix = el.getAttribute('data-suffix') || '';
       var counter = { val: 0 };

@@ -114,7 +114,13 @@
   ============================================================ */
   var contactForm = document.getElementById('contactForm');
   var formNote = document.getElementById('formNote');
-  var contactEmail = document.body.getAttribute('data-contact-email') || '';
+  var contactEmail = '';
+  try { contactEmail = atob(document.body.getAttribute('data-contact-email') || ''); } catch (e) {}
+  var emailLink = document.getElementById('contactEmailLink');
+  if (emailLink && contactEmail) {
+    emailLink.href = 'mailto:' + contactEmail;
+    emailLink.textContent = contactEmail;
+  }
 
   var contactFormCopy = {
     tr: {

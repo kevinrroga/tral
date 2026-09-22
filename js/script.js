@@ -528,4 +528,32 @@
   }
 
   window.addEventListener('load', initGsapAnimations);
+
+  /* ============================================================
+     PAUSE INFINITE ANIMATIONS WHEN OFF-SCREEN OR TAB HIDDEN
+  ============================================================ */
+  // Pause hero bounce/dotMove when hero section leaves the viewport
+  var heroSection = document.querySelector('.hero');
+  var scrollIndicator = document.querySelector('.hero__scroll-indicator');
+  var scrollDot = document.querySelector('.scroll-dot');
+  if (heroSection && 'IntersectionObserver' in window) {
+    var heroObserver = new IntersectionObserver(function (entries) {
+      var state = entries[0].isIntersecting ? 'running' : 'paused';
+      if (scrollIndicator) scrollIndicator.style.animationPlayState = state;
+      if (scrollDot) scrollDot.style.animationPlayState = state;
+    });
+    heroObserver.observe(heroSection);
+  }
+
+  // Pause all three animations when the browser tab is hidden
+  var whatsappPulse = document.querySelector('.whatsapp-float::after');
+  document.addEventListener('visibilitychange', function () {
+    var state = document.hidden ? 'paused' : 'running';
+    if (scrollIndicator) scrollIndicator.style.animationPlayState = state;
+    if (scrollDot) scrollDot.style.animationPlayState = state;
+    // ::after pseudo-element can't be targeted directly via JS;
+    // toggle a class on the parent and handle it in CSS instead
+    var waFloat = document.querySelector('.whatsapp-float');
+    if (waFloat) waFloat.classList.toggle('animations-paused', document.hidden);
+  });
 })();

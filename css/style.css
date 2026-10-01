@@ -132,7 +132,6 @@ img { max-width: 100%; display: block; }
   z-index: 1000;
   transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
   padding: 1.5rem 0;
-  opacity: 0;
 }
 
 .navbar.is-scrolled {
@@ -183,6 +182,8 @@ img { max-width: 100%; display: block; }
 }
 .nav-link:hover { color: var(--color-gold); }
 .nav-link:hover::after { width: 100%; }
+.nav-link.is-active { color: var(--color-gold); }
+.nav-link.is-active::after { width: 100%; }
 
 .navbar__actions {
   display: flex;
@@ -236,11 +237,18 @@ img { max-width: 100%; display: block; }
   background: rgba(247, 245, 242, 0.99);
   transition: max-height var(--transition);
 }
-.mobile-drawer.is-open { max-height: 400px; }
+.mobile-drawer.is-open { max-height: 480px; }
 .mobile-drawer .nav-link {
   padding: 1rem var(--gutter);
   border-top: 1px solid rgba(26, 26, 26, 0.08);
 }
+.mobile-drawer__lang {
+  padding: 1rem var(--gutter);
+  border-top: 1px solid rgba(26, 26, 26, 0.08);
+}
+
+/* ============ SCROLL OFFSET (fixed navbar) ============ */
+section[id] { scroll-margin-top: 80px; }
 
 /* ============ HERO ============ */
 .hero {
@@ -466,6 +474,20 @@ img { max-width: 100%; display: block; }
 
 /* ============ SERVICES ============ */
 .services { background: var(--color-navy); }
+
+.services__group { margin-bottom: 3rem; }
+.services__group:last-child { margin-bottom: 0; }
+
+.services__category-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-gold);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(191, 26, 47, 0.2);
+}
 
 .services__grid {
   display: grid;

@@ -5,7 +5,7 @@
      LANGUAGE TOGGLE
   ============================================================ */
   var LANG_KEY = 'siteLang';
-  var langToggleBtn = document.getElementById('langToggle');
+  var langToggleBtns = document.querySelectorAll('.lang-toggle');
   var langOptions = document.querySelectorAll('.lang-toggle__option');
 
   /* ---- WhatsApp deep links ---- */
@@ -61,12 +61,12 @@
   var currentLang = getStoredLanguage() || 'tr';
   applyLanguage(currentLang);
 
-  if (langToggleBtn) {
-    langToggleBtn.addEventListener('click', function () {
+  langToggleBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
       currentLang = currentLang === 'tr' ? 'en' : 'tr';
       applyLanguage(currentLang);
     });
-  }
+  });
 
   /* ============================================================
      MOBILE NAV DRAWER
@@ -87,6 +87,29 @@
         mobileDrawer.classList.remove('is-open');
         hamburger.setAttribute('aria-expanded', 'false');
       });
+    });
+  }
+
+  /* ============================================================
+     SCROLL SPY: highlight active nav link as user scrolls
+  ============================================================ */
+  var spySections = document.querySelectorAll('section[id]');
+  var spyLinks = document.querySelectorAll('.navbar__nav .nav-link');
+
+  if ('IntersectionObserver' in window && spySections.length && spyLinks.length) {
+    var spyObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
+          spyLinks.forEach(function (link) {
+            link.classList.toggle('is-active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-15% 0px -75% 0px' });
+
+    spySections.forEach(function (section) {
+      spyObserver.observe(section);
     });
   }
 
@@ -179,14 +202,6 @@
       };
       var copy = contactFormCopy[currentLang] || contactFormCopy.tr;
       var summary = buildContactSummary(data, currentLang);
-
-      if (contactEmail) {
-        var mailUrl =
-          'mailto:' + contactEmail +
-          '?subject=' + encodeURIComponent(copy.subject) +
-          '&body=' + encodeURIComponent(summary);
-        openMailClient(mailUrl);
-      }
 
       if (whatsappNumber) {
         openInNewTab('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(summary));
@@ -320,6 +335,7 @@
     gsap.registerPlugin(ScrollTrigger);
 
     /* ---- Navbar fade-in on load ---- */
+    gsap.set('#navbar', { opacity: 0, y: -20 });
     gsap.to('#navbar', {
       opacity: 1,
       y: 0,
@@ -327,7 +343,6 @@
       delay: 0.3,
       ease: 'power2.out'
     });
-    gsap.set('#navbar', { y: -20 });
 
     /* ---- Hero heading / subheading word stagger ---- */
     function splitIntoWords(el) {

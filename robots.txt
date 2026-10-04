@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ferialrroga.example/sitemap.xml
+Sitemap: https://tr-al-visas.vercel.app/sitemap.xml

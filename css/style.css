@@ -156,6 +156,20 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--color-off-white);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.1;
+}
+
+.navbar__tagline {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  line-height: 1;
 }
 
 .navbar__nav {

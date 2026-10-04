@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #f7f5f2;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* dot grid background */
+  .bg-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(191,26,47,0.18) 1.5px, transparent 1.5px);
+    background-size: 36px 36px;
+  }
+
+  /* warm vignette */
+  .bg-vignette {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 40%, transparent 40%, rgba(191,26,47,0.06) 100%);
+  }
+
+  /* red top accent bar */
+  .top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: #bf1a2f;
+  }
+
+  /* main content */
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px 120px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .label {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #bf1a2f;
+  }
+
+  .title {
+    font-size: 72px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  .title em {
+    font-style: italic;
+    color: #bf1a2f;
+  }
+
+  .divider {
+    width: 48px;
+    height: 1px;
+    background: rgba(191,26,47,0.4);
+  }
+
+  .tagline {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(26,26,26,0.6);
+    letter-spacing: 0.02em;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  /* skyline */
+  .skyline-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+  }
+
+  .skyline-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(191,26,47,0.12);
+  }
+
+  .skyline-front {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: rgba(191,26,47,0.22);
+  }
+
+  /* flags row */
+  .flags {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .flag {
+    width: 44px;
+    height: 30px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    flex-shrink: 0;
+  }
+
+  .arrow {
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 18px;
+    color: rgba(26,26,26,0.3);
+    line-height: 1;
+  }
+
+  /* corner badge */
+  .badge {
+    position: absolute;
+    bottom: 32px;
+    right: 48px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(26,26,26,0.35);
+  }
+
+  .badge span {
+    color: #bf1a2f;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-dots"></div>
+<div class="bg-vignette"></div>
+<div class="top-bar"></div>
+
+<div class="content">
+  <div class="label">Arnavutluk Danışmanlık</div>
+  <div class="title">Yeni Bir<br><em>Başlangıç</em></div>
+  <div class="divider"></div>
+  <div class="tagline">Oturma izni, çalışma izni ve yerleşim süreçlerinizde Türkçe destek.</div>
+
+  <div class="flags">
+    <img class="flag" src="https://flagcdn.com/w80/tr.png" alt="Türkiye">
+    <div class="arrow">→</div>
+    <img class="flag" src="https://flagcdn.com/w80/al.png" alt="Arnavutluk">
+  </div>
+</div>
+
+<!-- back skyline -->
+<div class="skyline-wrap">
+  <svg class="skyline-back" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0 140L100 115 220 130 340 100 480 125 620 90 760 120 900 105 1040 130 1180 100 1320 125 1440 110 1440 200 0 200Z"/>
+    <rect x="10" y="155" width="70" height="45"/>
+    <rect x="95" y="140" width="55" height="60"/>
+    <rect x="165" y="162" width="60" height="38"/>
+    <rect x="365" y="148" width="65" height="52"/>
+    <rect x="445" y="130" width="50" height="70"/>
+    <rect x="615" y="145" width="55" height="55"/>
+    <rect x="690" y="125" width="45" height="75"/>
+    <rect x="855" y="142" width="60" height="58"/>
+    <rect x="1005" y="132" width="60" height="68"/>
+    <rect x="1085" y="158" width="75" height="42"/>
+    <rect x="1180" y="145" width="55" height="55"/>
+  </svg>
+
+  <!-- front skyline -->
+  <svg class="skyline-front" viewBox="0 0 1440 200" preserveAspectRatio="none" fill="currentColor">
+    <rect x="0" y="120" width="60" height="80"/>
+    <rect x="60" y="70" width="45" height="130"/>
+    <rect x="110" y="100" width="75" height="100"/>
+    <path d="M110 100a37.5 37.5 0 0 1 75 0z"/>
+    <rect x="178" y="20" width="14" height="80"/>
+    <path d="M178 20l7-18 7 18z"/>
+    <rect x="210" y="110" width="55" height="90"/>
+    <rect x="270" y="50" width="40" height="150"/>
+    <rect x="315" y="80" width="90" height="120"/>
+    <rect x="350" y="0" width="22" height="80"/>
+    <path d="M350 0l11-22 11 22z" transform="translate(0,22)"/>
+    <rect x="410" y="115" width="60" height="85"/>
+    <g>
+      <rect x="480" y="170" width="70" height="30"/>
+      <rect x="480" y="140" width="70" height="30" transform="rotate(4 515 155)"/>
+      <rect x="480" y="110" width="70" height="30" transform="rotate(8 515 125)"/>
+      <rect x="480" y="80" width="70" height="30" transform="rotate(12 515 95)"/>
+      <rect x="480" y="55" width="70" height="26" transform="rotate(16 515 68)"/>
+    </g>
+    <rect x="580" y="95" width="70" height="105"/>
+    <rect x="655" y="40" width="130" height="160"/>
+    <rect x="790" y="110" width="60" height="90"/>
+    <rect x="860" y="105" width="80" height="95"/>
+    <path d="M860 105a40 40 0 0 1 80 0z"/>
+    <rect x="1005" y="60" width="90" height="140"/>
+    <path d="M1005 60a45 45 0 0 1 90 0z"/>
+    <rect x="1120" y="105" width="70" height="95"/>
+    <rect x="1195" y="65" width="90" height="135"/>
+    <rect x="1290" y="110" width="150" height="90"/>
+  </svg>
+</div>
+
+<div class="badge">Türkçe Destek &nbsp;<span>·</span>&nbsp; Tiran, Arnavutluk</div>
+
+</body>
+</html>

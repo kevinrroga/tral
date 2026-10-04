@@ -512,6 +512,7 @@
       var suffix = el.getAttribute('data-suffix') || '';
       var counter = { val: 0 };
 
+      el.textContent = '0';
       ScrollTrigger.create({
         trigger: el,
         start: 'top 85%',

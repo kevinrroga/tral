@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tr-al-visas.vercel.app/sitemap.xml
+Sitemap: https://albavisa.com/sitemap.xml

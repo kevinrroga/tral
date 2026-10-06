@@ -567,6 +567,42 @@
     heroObserver.observe(heroSection);
   }
 
+  /* ============================================================
+     COOKIE CONSENT BANNER
+  ============================================================ */
+  var CONSENT_KEY = 'cookieConsent';
+  var cookieBanner = document.getElementById('cookieBanner');
+  var cookieAccept = document.getElementById('cookieAccept');
+  var cookieDecline = document.getElementById('cookieDecline');
+
+  function dismissCookieBanner() {
+    if (!cookieBanner) return;
+    document.body.classList.remove('has-cookie-banner');
+    cookieBanner.classList.remove('is-visible');
+    setTimeout(function () { cookieBanner.hidden = true; }, 400);
+  }
+
+  if (cookieBanner && !localStorage.getItem(CONSENT_KEY)) {
+    cookieBanner.hidden = false;
+    document.body.classList.add('has-cookie-banner');
+    setTimeout(function () { cookieBanner.classList.add('is-visible'); }, 600);
+  }
+
+  if (cookieAccept) {
+    cookieAccept.addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+      dismissCookieBanner();
+      // TODO: initialise Google Analytics here once the tracking ID is added
+    });
+  }
+
+  if (cookieDecline) {
+    cookieDecline.addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'declined');
+      dismissCookieBanner();
+    });
+  }
+
   // Pause all three animations when the browser tab is hidden
   var whatsappPulse = document.querySelector('.whatsapp-float::after');
   document.addEventListener('visibilitychange', function () {

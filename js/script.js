@@ -12,8 +12,9 @@
   var whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
   var whatsappNumber = (document.body.getAttribute('data-whatsapp-number') || '').replace(/\D/g, '');
   var whatsappMessages = {
-    tr: 'Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.',
-    en: 'Hello, I would like more information about relocating to Albania.'
+    tr: ‘Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.’,
+    en: ‘Hello, I would like more information about relocating to Albania.’,
+    az: ‘Salam, Albaniyaya köçmə prosesi ilə bağlı məlumat almaq istəyirəm.’
   };
 
   function updateWhatsappLinks(lang) {
@@ -58,12 +59,19 @@
     }
   }
 
+  var langs = ['tr', 'en', 'az'];
   var currentLang = getStoredLanguage() || 'tr';
   applyLanguage(currentLang);
 
   langToggleBtns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      currentLang = currentLang === 'tr' ? 'en' : 'tr';
+    btn.addEventListener('click', function (e) {
+      var opt = e.target.closest ? e.target.closest('.lang-toggle__option') : null;
+      if (opt && opt.getAttribute('data-lang')) {
+        currentLang = opt.getAttribute('data-lang');
+      } else {
+        var idx = langs.indexOf(currentLang);
+        currentLang = langs[(idx + 1) % langs.length];
+      }
       applyLanguage(currentLang);
     });
   });
@@ -161,6 +169,14 @@
       phone: 'Phone',
       message: 'Message',
       subject: 'New contact form submission'
+    },
+    az: {
+      intro: 'Saytdakı əlaqə formasından yeni bir müraciət:',
+      name: 'Ad Soyad',
+      email: 'E-poçt',
+      phone: 'Telefon',
+      message: 'Mesaj',
+      subject: 'Saytdan yeni əlaqə forması'
     }
   };
 

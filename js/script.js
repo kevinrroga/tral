@@ -12,9 +12,9 @@
   var whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
   var whatsappNumber = (document.body.getAttribute('data-whatsapp-number') || '').replace(/\D/g, '');
   var whatsappMessages = {
-    tr: ‘Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.’,
-    en: ‘Hello, I would like more information about relocating to Albania.’,
-    az: ‘Salam, Albaniyaya köçmə prosesi ilə bağlı məlumat almaq istəyirəm.’
+    tr: "Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.",
+    en: "Hello, I would like more information about relocating to Albania.",
+    az: "Salam, Albaniyaya köçmə prosesi ilə bağlı məlumat almaq istəyirəm."
   };
 
   function updateWhatsappLinks(lang) {

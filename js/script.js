@@ -37,7 +37,12 @@
        marquee loop); a cached NodeList would miss those new nodes. */
     document.querySelectorAll('[data-tr]').forEach(function (el) {
       var val = el.getAttribute('data-' + lang);
-      if (val !== null) el.innerHTML = val;
+      if (val === null) return;
+      if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        el.innerHTML = val;
+      }
     });
     document.querySelectorAll('[data-tr-placeholder]').forEach(function (el) {
       var val = el.getAttribute('data-' + lang + '-placeholder');

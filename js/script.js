@@ -609,11 +609,26 @@
     setTimeout(function () { cookieBanner.classList.add('is-visible'); }, 600);
   }
 
+  function loadGA() {
+    if (window.__gaLoaded) return;
+    window.__gaLoaded = true;
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-922RQG39DJ';
+    script.async = true;
+    document.head.appendChild(script);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', 'G-922RQG39DJ');
+  }
+
+  if (localStorage.getItem(CONSENT_KEY) === 'accepted') loadGA();
+
   if (cookieAccept) {
     cookieAccept.addEventListener('click', function () {
       localStorage.setItem(CONSENT_KEY, 'accepted');
       dismissCookieBanner();
-      // TODO: initialise Google Analytics here once the tracking ID is added
+      loadGA();
     });
   }
 

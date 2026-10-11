@@ -10,7 +10,13 @@
 
   /* ---- WhatsApp deep links ---- */
   var whatsappLinks = document.querySelectorAll('.js-whatsapp-link');
-  var whatsappNumber = (document.body.getAttribute('data-whatsapp-number') || '').replace(/\D/g, '');
+  var whatsappNumber = '';
+  try { whatsappNumber = atob(document.body.getAttribute('data-whatsapp-number') || '').replace(/\D/g, ''); } catch (e) {}
+  var phoneLink = document.getElementById('contactPhoneLink');
+  try {
+    var phoneDisplay = atob(document.body.getAttribute('data-phone-display') || '');
+    if (phoneLink && phoneDisplay) phoneLink.textContent = phoneDisplay;
+  } catch (e) {}
   var whatsappMessages = {
     tr: "Merhaba, Arnavutluk’a taşınma süreciyle ilgili bilgi almak istiyorum.",
     en: "Hello, I would like more information about relocating to Albania.",

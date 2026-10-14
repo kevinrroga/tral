@@ -999,3 +999,75 @@ body.has-cookie-banner .whatsapp-float {
   .scroll-dot { animation: none; }
   .whatsapp-float::after { animation: none; }
 }
+
+/* ============ PRIVACY PAGE ============ */
+.policy { background: var(--color-charcoal); }
+
+.policy__body {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.policy__body h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.4rem;
+}
+
+.policy__date {
+  color: rgba(26, 26, 26, 0.45);
+  font-size: 0.85rem;
+  margin-bottom: 3rem;
+}
+
+.policy__body h2 {
+  font-size: 1.35rem;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--color-off-white);
+}
+
+.policy__body p {
+  color: rgba(26, 26, 26, 0.7);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  font-size: 0.97rem;
+}
+
+.policy__body a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+.policy__body a:hover { text-decoration: underline; }
+
+.policy__body ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.policy__body ul li {
+  color: rgba(26, 26, 26, 0.7);
+  line-height: 1.75;
+  margin-bottom: 0.4rem;
+  font-size: 0.97rem;
+}
+
+/* Language switcher used on privacy pages (plain links, not JS toggle) */
+.lang-privacy {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.lang-privacy__opt {
+  color: rgba(26, 26, 26, 0.4);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.lang-privacy__opt:hover,
+.lang-privacy__opt.is-active {
+  color: var(--color-gold);
+}

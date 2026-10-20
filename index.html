@@ -13,7 +13,9 @@
   data-az="Albaniyaya köçmək istəyən və ya artıq burada yaşayan vətəndaşlar üçün yaşayış icazəsi, iş icazəsi, viza və şirkət qurulması məsləhəti. Azərbaycanca dəstək, etibarlı rəhbərlik."
   content="Arnavutluk'a taşınan ya da burada yaşayan Türk vatandaşları için oturma izni, çalışma izni, vize ve şirket kuruluşu danışmanlığı. Türkçe destek, güvenilir rehberlik.">
 <meta name="robots" content="index, follow">
+<meta http-equiv="Content-Language" content="tr">
 <meta name="author" content="Alba Visa">
+<meta name="keywords" content="Arnavutluk oturma izni, çalışma izni Arnavutluk, vize danışmanlığı, şirket kuruluşu Arnavutluk, Türk vatandaşları Arnavutluk, Tiran danışmanlık, oturma izni başvurusu">
 <meta name="theme-color" content="#0a0f1e">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -36,24 +38,28 @@
 <meta property="og:locale:alternate" content="az_AZ">
 <meta property="og:title" content="Arnavutluk Oturma İzni ve Vize Danışmanlığı | Alba Visa">
 <meta property="og:description" content="Arnavutluk'a taşınan ya da burada yaşayan Türk vatandaşları için oturma izni, çalışma izni, vize ve şirket kuruluşu danışmanlığı. Türkçe destek, güvenilir rehberlik.">
-<meta property="og:image" content="https://albavisa.com/assets/favicon.png">
-<meta property="og:image:width" content="1254">
-<meta property="og:image:height" content="1254">
+<meta property="og:image" content="https://albavisa.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Alba Visa — Albania Residence & Visa Consulting">
 
 <!-- Twitter/X card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Arnavutluk Oturma İzni ve Vize Danışmanlığı | Alba Visa">
 <meta name="twitter:description" content="Arnavutluk'a taşınan ya da burada yaşayan Türk vatandaşları için oturma izni, çalışma izni, vize ve şirket kuruluşu danışmanlığı.">
-<meta name="twitter:image" content="https://albavisa.com/assets/favicon.png">
+<meta name="twitter:image" content="https://albavisa.com/assets/og-image.png">
 
 <meta name="google-site-verification" content="fh4B43BrH6XYg29mu884pEZhJxikOdvA1iPCKJn151w">
-<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.png" type="image/png" sizes="64x64">
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="preload" href="css/style.css" as="style">
 <link rel="stylesheet" href="css/style.css">
 
 <!-- Structured data: tells Google this is a local professional service in
@@ -73,9 +79,10 @@
   },
   "areaServed": [
     { "@type": "Country", "name": "Albania" },
-    { "@type": "Country", "name": "Turkey" }
+    { "@type": "Country", "name": "Turkey" },
+    { "@type": "Country", "name": "Azerbaijan" }
   ],
-  "availableLanguage": ["tr", "en", "az"],
+  "availableLanguage": ["Turkish", "English", "Azerbaijani"],
   "founder": {
     "@type": "Person",
     "name": "Alba Visa"
@@ -98,6 +105,13 @@
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gayrimenkul Danışmanlığı" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Yerleşim Desteği" } }
     ]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": ["Turkish", "English", "Azerbaijani"],
+    "contactOption": "TollFree",
+    "areaServed": ["AL", "TR", "AZ"]
   },
   "openingHoursSpecification": [
     {
@@ -212,6 +226,51 @@
         "@type": "Answer",
         "text": "Arnavutluk; Avrupa'ya yakınlığı, uygun yaşam maliyeti ve gelişen iş ortamıyla Türk vatandaşları için giderek daha cazip bir seçenek haline geliyor."
       }
+    }
+  ]
+}
+</script>
+
+<!-- Organization + WebSite: helps Google build a Knowledge Panel entry for
+     Alba Visa as a named entity. The @id URIs act as stable identifiers that
+     Google can consolidate across the TR / EN / AZ pages. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://albavisa.com/#organization",
+      "name": "Alba Visa",
+      "url": "https://albavisa.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://albavisa.com/assets/favicon.svg",
+        "width": 64,
+        "height": 64
+      },
+      "description": "Albania residence permit, work permit, visa and company formation consulting for Turkish, Azerbaijani and English-speaking clients.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tiranë",
+        "addressCountry": "AL"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+355673615880",
+        "email": "contact@albavisa.com",
+        "contactType": "customer service",
+        "availableLanguage": ["Turkish", "English", "Azerbaijani"]
+      },
+      "email": "contact@albavisa.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://albavisa.com/#website",
+      "name": "Alba Visa",
+      "url": "https://albavisa.com/",
+      "publisher": { "@id": "https://albavisa.com/#organization" },
+      "inLanguage": ["tr", "en", "az"]
     }
   ]
 }
@@ -498,7 +557,7 @@
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 4.9-2.2 4.9-4.9S14.7 2.2 12 2.2 7.1 4.4 7.1 7.1 9.3 12 12 12z" stroke="#c9a84c" stroke-width="1.2"/><path d="M4 21.8c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#c9a84c" stroke-width="1.2"/></svg>
             </div>
             <h3 data-tr="Oturma İzni" data-en="Residence Permit" data-az="Yaşayış İcazəsi">Oturma İzni</h3>
-            <p data-tr="Arnavutluk oturma izni başvurularında uçtan uca rehberlik ve belge yönetimi." data-en="End-to-end guidance and document management for Albanian residence permit applications." data-az="Albaniya yaşayış icazəsi müraciətlərində başdan sona rəhbərlik və sənəd idarəetməsi.">Arnavutluk oturma izni başvurularında uçtan uca rehberlik ve belge yönetimi.</p>
+            <p data-tr="Arnavutluk oturma izni başvurularında uçtan uca rehberlik ve belge yönetimi. Gerekli belgelerinizi hazırlar, başvurunuzu sunar ve yetkili makamlarla takibini sizin adınıza yürütürüz." data-en="End-to-end guidance and document management for Albanian residence permit applications. We prepare your documents, submit your application, and follow up with the authorities on your behalf." data-az="Albaniya yaşayış icazəsi müraciətlərindən başdan sona rəhbərlik və sənəd idarəetməsi. Sənədlərinizi hazırlayır, müraciətinizi edir və müvafiq orqanlarla izləməni sizin adınıza aparırıq.">Arnavutluk oturma izni başvurularında uçtan uca rehberlik ve belge yönetimi. Gerekli belgelerinizi hazırlar, başvurunuzu sunar ve yetkili makamlarla takibini sizin adınıza yürütürüz.</p>
           </article>
 
           <article class="card service-card">
@@ -522,7 +581,7 @@
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="#c9a84c" stroke-width="1.2"/><path d="M3 7v10l9 4 9-4V7" stroke="#c9a84c" stroke-width="1.2"/></svg>
             </div>
             <h3 data-tr="Vize Danışmanlığı" data-en="Visa Consultation" data-az="Viza Məsləhəti">Vize Danışmanlığı</h3>
-            <p data-tr="Doğru vize türünü belirlemenize ve başvuru sürecinizi hızlandırmanıza yardımcı oluyoruz." data-en="We help you identify the right visa type and streamline your application process." data-az="Sizə uyğun viza növünü müəyyənləşdirməyə və müraciət prosesinizi sürətləndirməyə kömək edirik.">Doğru vize türünü belirlemenize ve başvuru sürecinizi hızlandırmanıza yardımcı oluyoruz.</p>
+            <p data-tr="Durumunuza en uygun Arnavutluk vize türünü belirliyor, başvuru sürecinizi belgeler eksiksiz ve son tarihler gözetilerek yönetiyoruz." data-en="We identify the right Albania visa type for your situation and manage your entire application process, ensuring documents are complete and deadlines are met." data-az="Vəziyyətinizə uyğun Albaniya viza növünü müəyyənləşdirir, sənədlər tam və son müddətlər nəzərə alınaraq bütün müraciət prosesini idarə edirik.">Durumunuza en uygun Arnavutluk vize türünü belirliyor, başvuru sürecinizi belgeler eksiksiz ve son tarihler gözetilerek yönetiyoruz.</p>
           </article>
         </div>
       </div>
@@ -536,7 +595,7 @@
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="9" width="18" height="12" stroke="#c9a84c" stroke-width="1.2"/><path d="M3 9l9-6 9 6" stroke="#c9a84c" stroke-width="1.2"/></svg>
             </div>
             <h3 data-tr="Şirket Kuruluşu" data-en="Company Formation" data-az="Şirkət Qurulması">Şirket Kuruluşu</h3>
-            <p data-tr="Arnavutluk'ta şirket kurulumu, vergi kaydı ve yasal süreçlerde profesyonel destek sağlıyoruz." data-en="Professional support for company formation, tax registration, and legal procedures in Albania." data-az="Albaniyada şirkət qurulması, vergi qeydiyyatı və hüquqi prosedurlar üçün peşəkar dəstək.">Arnavutluk'ta şirket kurulumu, vergi kaydı ve yasal süreçlerde profesyonel destek sağlıyoruz.</p>
+            <p data-tr="Arnavutluk'ta şirket kurulumu, vergi kaydı ve yasal süreçlerde profesyonel destek sağlıyoruz. Doğru şirket yapısını seçmenizde rehberlik eder, resmi tescil sürecini başından sonuna kadar yönetiriz." data-en="Professional support for company formation, tax registration, and legal procedures in Albania. We guide you through choosing the right business structure and manage the official registration process from start to finish." data-az="Albaniyada şirkət qurulması, vergi qeydiyyatı və hüquqi prosedurlar üçün peşəkar dəstək. Düzgün biznes strukturunu seçməyinizdə rəhbərlik edir, rəsmi qeydiyyat prosesini başdan sona idarə edirik.">Arnavutluk'ta şirket kurulumu, vergi kaydı ve yasal süreçlerde profesyonel destek sağlıyoruz. Doğru şirket yapısını seçmenizde rehberlik eder, resmi tescil sürecini başından sonuna kadar yönetiriz.</p>
           </article>
 
           <article class="card service-card">
@@ -544,7 +603,7 @@
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V5l7-3z" stroke="#c9a84c" stroke-width="1.2"/><path d="M9 12l2 2 4-4.5" stroke="#c9a84c" stroke-width="1.2"/></svg>
             </div>
             <h3 data-tr="Marka Tescili ve Patent Danışmanlığı" data-en="Trademark &amp; Patent Consulting" data-az="Marka və Patent Məsləhəti">Marka Tescili ve Patent Danışmanlığı</h3>
-            <p data-tr="İşletmenizin marka ve patent haklarının Arnavutluk'ta tescili sürecinde uzman desteği sunuyoruz." data-en="Expert support for registering your business's trademark and patent rights in Albania." data-az="Biznesinizin marka və patent hüquqlarının Albaniyada qeydiyyatı prosesində ekspert dəstəyi.">İşletmenizin marka ve patent haklarının Arnavutluk'ta tescili sürecinde uzman desteği sunuyoruz.</p>
+            <p data-tr="İşletmenizin marka ve patent haklarının Arnavutluk'ta tescili için uzman destek sunuyoruz. Başvurunuzu hazırlar, ilgili kuruma sunar ve onay sürecini takip ederiz." data-en="Expert support for registering your business's trademark and patent rights in Albania. We prepare your application, submit it to the relevant authority, and track it through to approval." data-az="Biznesinizin Albaniyada marka və patent hüquqlarının qeydiyyatı üçün ekspert dəstəyi. Müraciətinizi hazırlayır, müvafiq orqana təqdim edir və təsdiq prosesinə qədər izləyirik.">İşletmenizin marka ve patent haklarının Arnavutluk'ta tescili için uzman destek sunuyoruz. Başvurunuzu hazırlar, ilgili kuruma sunar ve onay sürecini takip ederiz.</p>
           </article>
 
           <article class="card service-card">
@@ -812,6 +871,7 @@
     <div class="footer__brand">
       <span class="footer__logo">Alba Visa</span>
       <p data-tr="Arnavutluk'ta Türk vatandaşları için güvenilir danışmanlık." data-en="Trusted consulting for Turkish citizens in Albania." data-az="Albaniyada Türk vətəndaşları üçün etibarlı məsləhət.">Arnavutluk'ta Türk vatandaşları için güvenilir danışmanlık.</p>
+      <address style="font-style:normal" data-tr="Tiranë, Arnavutluk" data-en="Tirana, Albania" data-az="Tirana, Albaniya">Tiranë, Arnavutluk</address>
     </div>
 
     <nav class="footer__nav">
@@ -848,7 +908,6 @@
   </svg>
 </a>
 
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous"></script>
 <script>try{localStorage.setItem('siteLang','tr');}catch(e){}</script>

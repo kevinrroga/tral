@@ -536,6 +536,21 @@ section[id] { scroll-margin-top: 80px; }
   line-height: 1.55;
 }
 
+.service-card__link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #c9a84c;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+}
+
+.service-card__link:hover {
+  opacity: 0.75;
+}
+
 /* ============ HOW IT WORKS ============ */
 .how-it-works { background: var(--color-charcoal); }
 

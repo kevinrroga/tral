@@ -352,7 +352,25 @@
     });
   }
 
-  initHeroParticles();
+  /* Load Three.js only after the page has fully painted and all
+     other resources have loaded. The particle canvas is purely
+     additive — it fills in a beat after first paint with zero
+     visible impact on content or CTAs. */
+  function loadThreeJs() {
+    if (!document.getElementById('hero-canvas')) return;
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    s.integrity = 'sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==';
+    s.crossOrigin = 'anonymous';
+    s.onload = initHeroParticles;
+    document.head.appendChild(s);
+  }
+
+  if (document.readyState === 'complete') {
+    loadThreeJs();
+  } else {
+    window.addEventListener('load', loadThreeJs);
+  }
 
   /* ============================================================
      GSAP ANIMATIONS
@@ -563,7 +581,14 @@
     /* ---- Trust ticker marquee ---- */
     var track = document.getElementById('tickerTrack');
     if (track) {
-      track.innerHTML += track.innerHTML;
+      /* Clone each child individually so the duplicate half can be marked
+         aria-hidden, preventing screen-readers and crawlers from indexing
+         duplicate keyword text from the seamless-loop technique. */
+      Array.from(track.children).forEach(function (child) {
+        var clone = child.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        track.appendChild(clone);
+      });
       var totalWidth = track.scrollWidth / 2;
       gsap.to(track, {
         x: -totalWidth,

@@ -38,6 +38,52 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
+  <!-- EN service pages -->
+  <url>
+    <loc>https://albavisa.com/en/albania-residence-permit/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-residence-permit/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/albania-work-permit/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-work-permit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-work-permit/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/company-formation-albania/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/company-formation-albania/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/company-formation-albania/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/family-reunification-visa-albania/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/diploma-equivalency-albania/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+  </url>
+
   <!-- Privacy Policy pages -->
   <url>
     <loc>https://albavisa.com/privacy.html</loc>

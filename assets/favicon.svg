@@ -1,20 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Background -->
-  <rect width="100" height="100" rx="12" fill="#0a0f1e"/>
+  <!-- Red circle background -->
+  <circle cx="50" cy="50" r="50" fill="#c0192e"/>
 
-  <!-- Crescent moon (top-left) -->
-  <circle cx="18" cy="20" r="13" fill="#c9a84c"/>
-  <circle cx="25" cy="20" r="10" fill="#0a0f1e"/>
+  <!-- Globe grid lines (subtle, dark red) -->
+  <circle cx="50" cy="50" r="38" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+  <ellipse cx="50" cy="50" rx="20" ry="38" fill="none" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+  <line x1="12" y1="50" x2="88" y2="50" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
+  <line x1="50" y1="12" x2="50" y2="88" stroke="#8b0000" stroke-width="1" opacity="0.5"/>
 
-  <!-- Five-pointed star (top-right) -->
-  <polygon points="78,8 80,14 87,14 82,18 83,24 78,21 73,24 74,18 69,14 76,14" fill="#c9a84c"/>
-
-  <!-- Eagle: left wing sweep -->
-  <path d="M50 68 C35 57 10 53 3 61 C12 69 34 71 50 73Z" fill="#c9a84c"/>
-  <!-- Eagle: right wing sweep -->
-  <path d="M50 68 C65 57 90 53 97 61 C88 69 66 71 50 73Z" fill="#c9a84c"/>
-  <!-- Eagle: body -->
-  <ellipse cx="50" cy="76" rx="7" ry="10" fill="#c9a84c"/>
-  <!-- Eagle: head -->
-  <circle cx="50" cy="59" r="10" fill="#c9a84c"/>
+  <!-- Albanian double-headed eagle (simplified silhouette) -->
+  <!-- Body -->
+  <ellipse cx="50" cy="57" rx="8" ry="12" fill="#111"/>
+  <!-- Wings -->
+  <path d="M42 52 C30 44 14 48 12 56 C18 62 36 60 42 56Z" fill="#111"/>
+  <path d="M58 52 C70 44 86 48 88 56 C82 62 64 60 58 56Z" fill="#111"/>
+  <!-- Tail feathers -->
+  <path d="M44 68 C44 74 50 78 50 78 C50 78 56 74 56 68Z" fill="#111"/>
+  <!-- Left head -->
+  <circle cx="42" cy="42" r="7" fill="#111"/>
+  <polygon points="35,40 30,37 33,44" fill="#111"/>
+  <!-- Left crown -->
+  <polygon points="38,36 40,30 42,36 44,30 46,36" fill="#111"/>
+  <!-- Right head -->
+  <circle cx="58" cy="42" r="7" fill="#111"/>
+  <polygon points="65,40 70,37 67,44" fill="#111"/>
+  <!-- Right crown -->
+  <polygon points="54,36 56,30 58,36 60,30 62,36" fill="#111"/>
+  <!-- Neck connecting to body -->
+  <rect x="44" y="47" width="12" height="10" rx="3" fill="#111"/>
 </svg>

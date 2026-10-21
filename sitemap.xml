@@ -38,12 +38,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
+  <!-- Turkish service pages -->
+  <url>
+    <loc>https://albavisa.com/arnavutluk-oturma-izni/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/arnavutluk-calisma-izni/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/albania-work-permit/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+  </url>
+
   <!-- EN service pages -->
   <url>
     <loc>https://albavisa.com/en/albania-residence-permit/</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-residence-permit/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-residence-permit/"/>
   </url>
@@ -53,6 +75,7 @@
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-work-permit/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-work-permit/"/>
   </url>

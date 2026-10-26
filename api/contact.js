@@ -3,7 +3,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { name, email, phone, message, lang } = req.body || {};
+  const { name, email, phone, message, lang, summary } = req.body || {};
 
   if (!name || !email || !message) {
     return res.status(400).json({ error: 'Missing required fields' });
@@ -45,7 +45,8 @@ export default async function handler(req, res) {
       to: ['contact@albavisa.com'],
       reply_to: email,
       subject,
-      html
+      html,
+      ...(summary && { text: summary })
     })
   });
 

@@ -227,21 +227,17 @@
         phone: (document.getElementById('phone') || {}).value || '',
         message: (document.getElementById('message') || {}).value || ''
       };
-      var copy = contactFormCopy[currentLang] || contactFormCopy.tr;
       var summary = buildContactSummary(data, currentLang);
-
-      if (whatsappNumber) {
-        openInNewTab('https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(summary));
-      }
 
       fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: data.name, email: data.email, phone: data.phone, message: data.message, lang: currentLang })
+        body: JSON.stringify({ name: data.name, email: data.email, phone: data.phone, message: data.message, lang: currentLang, summary: summary })
       }).catch(function () {});
 
       if (formNote) formNote.hidden = false;
       contactForm.reset();
+      window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
     });
   }
 

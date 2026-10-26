@@ -200,9 +200,16 @@
   }
 
   var toastMessages = {
-    tr: 'Mesajınız iletildi! 24 saat içinde size geri döneceğiz.',
-    en: 'Message sent! We\'ll get back to you within 24 hours.',
-    az: 'Mesajınız göndərildi! 24 saat ərzində sizinlə əlaqə saxlayacağıq.'
+    success: {
+      tr: 'Mesajınız iletildi! 24 saat içinde size geri döneceğiz.',
+      en: 'Message sent! We\'ll get back to you within 24 hours.',
+      az: 'Mesajınız göndərildi! 24 saat ərzində sizinlə əlaqə saxlayacağıq.'
+    },
+    error: {
+      tr: 'Bir hata oluştu. Lütfen tekrar deneyin.',
+      en: 'Something went wrong. Please try again.',
+      az: 'Xəta baş verdi. Zəhmət olmasa yenidən cəhd edin.'
+    }
   };
 
   var toastEl = document.createElement('div');
@@ -210,8 +217,10 @@
   document.body.appendChild(toastEl);
   var toastTimer;
 
-  function showToast(lang) {
-    toastEl.textContent = toastMessages[lang] || toastMessages.en;
+  function showToast(type, lang) {
+    var msgs = toastMessages[type] || toastMessages.success;
+    toastEl.textContent = msgs[lang] || msgs.en;
+    toastEl.classList.toggle('form-toast--error', type === 'error');
     toastEl.classList.add('is-visible');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(function () {
@@ -253,11 +262,17 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: data.name, email: data.email, phone: data.phone, message: data.message, lang: currentLang, summary: summary })
-      }).catch(function () {});
-
-      showToast(currentLang);
-      contactForm.reset();
-      window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
+      }).then(function (res) {
+        if (res.ok) {
+          showToast('success', currentLang);
+          contactForm.reset();
+          window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
+        } else {
+          showToast('error', currentLang);
+        }
+      }).catch(function () {
+        showToast('error', currentLang);
+      });
     });
   }
 

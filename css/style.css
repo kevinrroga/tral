@@ -830,6 +830,9 @@ section[id] { scroll-margin-top: 80px; }
   transform: translateX(-50%) translateY(0);
   pointer-events: auto;
 }
+.form-toast--error {
+  border-left-color: #c0392b;
+}
 
 /* ============ FOOTER ============ */
 .footer { background: var(--color-charcoal); border-top: 1px solid rgba(191, 26, 47, 0.15); }

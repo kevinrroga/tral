@@ -718,6 +718,23 @@
     });
   }
 
+  /* ============================================================
+     BACK TO TOP BUTTON
+  ============================================================ */
+  var backToTopBtn = document.createElement('button');
+  backToTopBtn.className = 'back-to-top';
+  backToTopBtn.setAttribute('aria-label', 'Back to top');
+  backToTopBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>';
+  document.body.appendChild(backToTopBtn);
+
+  window.addEventListener('scroll', function () {
+    backToTopBtn.classList.toggle('is-visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   // Pause all three animations when the browser tab is hidden
   var whatsappPulse = document.querySelector('.whatsapp-float::after');
   document.addEventListener('visibilitychange', function () {

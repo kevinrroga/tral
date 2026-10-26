@@ -875,6 +875,47 @@ section[id] { scroll-margin-top: 80px; }
   color: rgba(26, 26, 26, 0.45);
 }
 
+/* ============ BACK TO TOP BUTTON ============ */
+.back-to-top {
+  position: fixed;
+  left: clamp(1.25rem, 4vw, 2rem);
+  bottom: clamp(1.25rem, 4vw, 2rem);
+  z-index: 900;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid rgba(var(--color-gold-rgb), 0.5);
+  background: var(--color-off-white);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease, border-color 0.2s ease;
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.back-to-top:hover {
+  background: var(--color-gold);
+  color: var(--color-navy);
+  border-color: var(--color-gold);
+}
+body.has-cookie-banner .back-to-top {
+  bottom: calc(clamp(1.25rem, 4vw, 2rem) + 68px);
+}
+@media (max-width: 480px) {
+  .back-to-top { width: 40px; height: 40px; }
+  body.has-cookie-banner .back-to-top {
+    bottom: calc(clamp(1.25rem, 4vw, 2rem) + 110px);
+  }
+}
+
 /* ============ REVEAL BASE STATE (GSAP controlled) ============ */
 .reveal { opacity: 1; }
 

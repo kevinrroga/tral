@@ -199,6 +199,26 @@
     return lines.join('\n');
   }
 
+  var toastMessages = {
+    tr: 'Mesajınız iletildi! 24 saat içinde size geri döneceğiz.',
+    en: 'Message sent! We\'ll get back to you within 24 hours.',
+    az: 'Mesajınız göndərildi! 24 saat ərzində sizinlə əlaqə saxlayacağıq.'
+  };
+
+  var toastEl = document.createElement('div');
+  toastEl.className = 'form-toast';
+  document.body.appendChild(toastEl);
+  var toastTimer;
+
+  function showToast(lang) {
+    toastEl.textContent = toastMessages[lang] || toastMessages.en;
+    toastEl.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastEl.classList.remove('is-visible');
+    }, 4000);
+  }
+
   function openInNewTab(url) {
     var link = document.createElement('a');
     link.href = url;
@@ -235,7 +255,7 @@
         body: JSON.stringify({ name: data.name, email: data.email, phone: data.phone, message: data.message, lang: currentLang, summary: summary })
       }).catch(function () {});
 
-      if (formNote) formNote.hidden = false;
+      showToast(currentLang);
       contactForm.reset();
       window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
     });

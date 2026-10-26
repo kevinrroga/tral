@@ -105,10 +105,14 @@ img { max-width: 100%; display: block; }
   background: var(--color-gold);
   color: var(--color-navy);
 }
-.btn--primary:hover {
+.btn--primary:hover:not(:disabled) {
   background: #a51526;
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(var(--color-gold-rgb), 0.25);
+}
+.btn--primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .btn--outline {

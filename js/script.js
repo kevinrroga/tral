@@ -246,9 +246,18 @@
     document.body.removeChild(link);
   }
 
+  var sendingLabels = { tr: 'Gönderiliyor...', en: 'Sending...', az: 'Göndərilir...' };
+
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      var submitBtn = contactForm.querySelector('button[type="submit"]');
+      var originalLabel = submitBtn ? submitBtn.textContent : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = sendingLabels[currentLang] || sendingLabels.en;
+      }
 
       var data = {
         name: (document.getElementById('name') || {}).value || '',
@@ -269,9 +278,17 @@
           window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
         } else {
           showToast('error', currentLang);
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalLabel;
+          }
         }
       }).catch(function () {
         showToast('error', currentLang);
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalLabel;
+        }
       });
     });
   }

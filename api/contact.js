@@ -41,7 +41,7 @@ export default async function handler(req, res) {
       Authorization: `Bearer ${apiKey}`
     },
     body: JSON.stringify({
-      from: 'Alba Visa <onboarding@resend.dev>',
+      from: 'Alba Visa <noreply@albavisa.com>',
       to: ['contact@albavisa.com'],
       reply_to: email,
       subject,

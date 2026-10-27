@@ -2,119 +2,218 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Turkish (default) -->
+  <!-- ===== HOMEPAGES ===== -->
   <url>
     <loc>https://albavisa.com/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/"/>
-    <xhtml:link rel="alternate" hreflang="az-AZ" href="https://albavisa.com/az/"/>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
-  <!-- Azerbaijani -->
   <url>
     <loc>https://albavisa.com/az/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/"/>
-    <xhtml:link rel="alternate" hreflang="az-AZ" href="https://albavisa.com/az/"/>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
-  <!-- English -->
   <url>
     <loc>https://albavisa.com/en/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/"/>
-    <xhtml:link rel="alternate" hreflang="az-AZ" href="https://albavisa.com/az/"/>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
-  <!-- Turkish service pages -->
+  <!-- ===== RESIDENCE PERMIT ===== -->
   <url>
     <loc>https://albavisa.com/arnavutluk-oturma-izni/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-oturma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-yasayis-icazesi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
   </url>
 
   <url>
-    <loc>https://albavisa.com/arnavutluk-calisma-izni/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
-    <xhtml:link rel="alternate" hreflang="en"    href="https://albavisa.com/en/albania-work-permit/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
-  </url>
-
-  <!-- EN service pages -->
-  <url>
     <loc>https://albavisa.com/en/albania-residence-permit/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-oturma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-oturma-izni/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-yasayis-icazesi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-residence-permit/"/>
   </url>
 
   <url>
-    <loc>https://albavisa.com/en/albania-work-permit/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://albavisa.com/az/albaniya-yasayis-icazesi/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="tr-TR" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-oturma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-residence-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-yasayis-icazesi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-residence-permit/"/>
+  </url>
+
+  <!-- ===== WORK PERMIT ===== -->
+  <url>
+    <loc>https://albavisa.com/arnavutluk-calisma-izni/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-calisma-izni/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-work-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-is-icazesi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/albania-work-permit/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-work-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-is-icazesi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-work-permit/"/>
   </url>
 
   <url>
-    <loc>https://albavisa.com/en/company-formation-albania/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://albavisa.com/az/albaniya-is-icazesi/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-calisma-izni/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/albania-work-permit/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-is-icazesi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/albania-work-permit/"/>
+  </url>
+
+  <!-- ===== COMPANY FORMATION ===== -->
+  <url>
+    <loc>https://albavisa.com/arnavutlukta-sirket-kurulumu/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutlukta-sirket-kurulumu/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/company-formation-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-sirket-qeydiyyati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutlukta-sirket-kurulumu/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/company-formation-albania/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutlukta-sirket-kurulumu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/company-formation-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-sirket-qeydiyyati/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/company-formation-albania/"/>
   </url>
 
   <url>
-    <loc>https://albavisa.com/en/family-reunification-visa-albania/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://albavisa.com/az/albaniya-sirket-qeydiyyati/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutlukta-sirket-kurulumu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/company-formation-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-sirket-qeydiyyati/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/company-formation-albania/"/>
+  </url>
+
+  <!-- ===== FAMILY REUNIFICATION ===== -->
+  <url>
+    <loc>https://albavisa.com/aile-birlestirme-vizesi-arnavutluk/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/aile-birlestirme-vizesi-arnavutluk/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-aile-birlesme-vizesi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/aile-birlestirme-vizesi-arnavutluk/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/family-reunification-visa-albania/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/aile-birlestirme-vizesi-arnavutluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-aile-birlesme-vizesi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/family-reunification-visa-albania/"/>
   </url>
 
   <url>
-    <loc>https://albavisa.com/en/diploma-equivalency-albania/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <loc>https://albavisa.com/az/albaniya-aile-birlesme-vizesi/</loc>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/aile-birlestirme-vizesi-arnavutluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-aile-birlesme-vizesi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/family-reunification-visa-albania/"/>
+  </url>
+
+  <!-- ===== DIPLOMA EQUIVALENCY ===== -->
+  <url>
+    <loc>https://albavisa.com/arnavutluk-diploma-denklik/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-diploma-denklik/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-diplom-taninmasi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-diploma-denklik/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/diploma-equivalency-albania/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-diploma-denklik/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-diplom-taninmasi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/diploma-equivalency-albania/"/>
   </url>
 
-  <!-- Privacy Policy pages -->
+  <url>
+    <loc>https://albavisa.com/az/albaniya-diplom-taninmasi/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-diploma-denklik/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-diplom-taninmasi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/en/diploma-equivalency-albania/"/>
+  </url>
+
+  <!-- ===== PRIVACY POLICY ===== -->
   <url>
     <loc>https://albavisa.com/privacy.html</loc>
     <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en"       href="https://albavisa.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/privacy.html"/>
   </url>
@@ -125,7 +224,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en"       href="https://albavisa.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/privacy.html"/>
   </url>
@@ -136,7 +235,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="en"       href="https://albavisa.com/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/privacy.html"/>
   </url>

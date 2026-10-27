@@ -54,6 +54,10 @@
       var val = el.getAttribute('data-' + lang + '-placeholder');
       if (val !== null) el.setAttribute('placeholder', val);
     });
+    document.querySelectorAll('[data-tr-href]').forEach(function (el) {
+      var val = el.getAttribute('data-' + lang + '-href');
+      if (val !== null) el.setAttribute('href', val);
+    });
     langOptions.forEach(function (opt) {
       opt.classList.toggle('is-active', opt.getAttribute('data-lang') === lang);
     });

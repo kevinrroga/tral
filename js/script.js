@@ -280,6 +280,7 @@
           showToast('success', currentLang);
           contactForm.reset();
           window.gtag && window.gtag('event', 'generate_lead', { event_category: 'contact_form' });
+          window.gtag && window.gtag('event', 'conversion', { send_to: 'AW-18512845790/vw9WCMnn1aQdEN63zvtE' });
         } else {
           showToast('error', currentLang);
           if (submitBtn) {

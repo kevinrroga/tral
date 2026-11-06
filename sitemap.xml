@@ -36,6 +36,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/"/>
   </url>
 
+  <!-- ===== DOES ALBANIA REQUIRE A VISA ===== -->
+  <url>
+    <loc>https://albavisa.com/arnavutluk-vize-istiyor-mu/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/does-albania-require-visa-for-turkish-citizens/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-viza-teleb-edir-mi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/en/does-albania-require-visa-for-turkish-citizens/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/does-albania-require-visa-for-turkish-citizens/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-viza-teleb-edir-mi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+  </url>
+
+  <url>
+    <loc>https://albavisa.com/az/albaniya-viza-teleb-edir-mi/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="tr-TR"    href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://albavisa.com/en/does-albania-require-visa-for-turkish-citizens/"/>
+    <xhtml:link rel="alternate" hreflang="az-AZ"    href="https://albavisa.com/az/albaniya-viza-teleb-edir-mi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/arnavutluk-vize-istiyor-mu/"/>
+  </url>
+
   <!-- ===== RESIDENCE PERMIT ===== -->
   <url>
     <loc>https://albavisa.com/arnavutluk-oturma-izni/</loc>

@@ -3,6 +3,8 @@
 A bilingual (Turkish / English) luxury one-page consulting website for a Tirana-based
 relocation consultant helping Turkish citizens move to Albania.
 
+Live site: https://albavisa.com
+
 ## Stack
 
 - Semantic HTML5, CSS3 (custom properties)
@@ -73,15 +75,13 @@ picked up from `contactFormCopy` in `js/script.js`.
   search queries ("Arnavutluk'ta nasıl oturma izni alınır?"), which is the
   single most effective on-page lever for matching long-tail searches.
 - **`robots.txt`** / **`sitemap.xml`** are in the project root, both
-  pointing at the placeholder domain below.
+  pointing at `https://albavisa.com`.
 
-### Placeholder domain
+### Domain
 
-Several files reference `https://ferialrroga.example/` as a stand-in for
-the real domain (chosen because `.example` is reserved for documentation
-and never resolves): `index.html` (canonical, `og:url`, JSON-LD `url`),
-`robots.txt`, and `sitemap.xml`. Once the site has a real domain, replace
-every occurrence of `ferialrroga.example` across those files.
+The site's domain is `https://albavisa.com`. It is used in `index.html`
+(canonical, `og:url`, JSON-LD `url`), `robots.txt`, and `sitemap.xml`. An
+earlier placeholder domain was replaced everywhere, see `CHANGES.md`.
 
 ### What on-page SEO can't do alone
 

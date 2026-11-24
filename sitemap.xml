@@ -274,4 +274,12 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://albavisa.com/privacy.html"/>
   </url>
 
+  <!-- ===== FAMILY LAW ===== -->
+  <url>
+    <loc>https://albavisa.com/arnavutlukta-aile-hukuku/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
